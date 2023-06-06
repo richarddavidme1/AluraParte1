@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+<h1>CALCULAR IMC</h1>
+
+<script>
+        function SaltarDeLinea()
+    { 
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+
+    }
+  function ImprimirParametros(frase)
+   {
+    document.write(frase);
+    SaltarDeLinea();
+   }
+   function ImcCalcular(peso,altura)
+   {
+    imc=peso/(altura*altura);
+    return(imc);
+   }
+
+   peso1=76;
+   altura1=1.85;
+   nombre1="Richard"
+   imcpersona1=ImcCalcular(peso1,altura1)
+   ImprimirParametros("El IMC1 de " +nombre1+" es : " + imcpersona1);
+
+   peso2=72;
+   altura2=1.70;
+   nombre2="David"
+   imcpersona2=ImcCalcular(peso2,altura2)
+   ImprimirParametros("El IMC1 de " +nombre2+" es : " + imcpersona2);
+
+    
+</script>

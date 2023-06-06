@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<canvas width="800" height="600">
+
+
+</canvas>
+
+<script>
+    var pantalla =document.querySelector("canvas");
+    var pincel= pantalla.getContext("2d");
+
+    //Es una propiedad se le pasa el color
+    pincel.fillStyle="lightblue";
+    //Es una funcion se le pasa el argumento
+    pincel.fillRect(0,0,600,400);
+    //Es una propiedad se le pasa el color
+    pincel.fillStyle="green";
+    //Es una funcion se le pasa el argumento
+    pincel.fillRect(0,0,200,400);
+    pincel.fillStyle="red";
+    //Es una funcion se le pasa el argumento
+    pincel.fillRect(200,0,200,400);
+    pincel.fillStyle="purple";
+    //Es una funcion se le pasa el argumento
+    pincel.fillRect(400,0,600,400);
+
+    //triangulo
+    pincel.fillStyle="yellow";
+    pincel.beginPath();
+    pincel.moveTo(300,200);
+    pincel.lineTo(200,400);
+    pincel.lineTo(400,400);
+    pincel.fill();
+    //circulo
+    pincel.fillStyle="gray";
+    pincel.beginPath();
+    pincel.arc(300,200,50,0,2*Math.PI);
+    pincel.fill();
+
+</script>

@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+<h1> Puntacion de equipos de futbol </h1>
+
+<script>
+            function SaltarDeLinea()
+    { 
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+
+    }
+  function ImprimirParametros(frase)
+   {
+    document.write(frase);
+    SaltarDeLinea();
+   }
+   
+   var ganados= parseInt(prompt("Numero de partidos ganados: "));
+   var empates= parseInt(prompt("Numero de partidos empatados: "));
+
+   //transformar de texo a numero  parseInt
+
+   //puntaje=(ganados*3)+ (empates*1);
+   var puntaje=(ganados*3)+ empates;
+
+   ImprimirParametros("El numero de puntos totales es : " + puntaje);
+   if (puntaje > 28) 
+   {
+    ImprimirParametros("El equipo esta mejor que el año pasado ");
+   }
+   if (puntaje < 28) 
+   {
+    ImprimirParametros("El equipo esta peor que el año pasado ");
+   }
+   if (puntaje == 28) 
+   {
+    ImprimirParametros("El equipo esta igual que el año pasado ");
+   }
+
+    
+</script>

@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<h1>JUEGO DE ADVINACION DEL 1 AL 10</h1>
+
+<script>
+    function SaltarDeLinea()
+     { 
+       document.write("<br>");
+       document.write("<br>");
+       document.write("<br>");
+
+     }
+    function ImprimirParametros(frase)
+     {
+      document.write(frase);
+      SaltarDeLinea();
+     }
+     var numeroprincipal=Math.round(Math.random()*10);
+     var numeroadvinidado=parseInt(prompt("Ingrese el numero del 1 al 10"));
+
+     if(numeroadvinidado == numeroprincipal)
+     {
+        ImprimirParametros(" FELICITACIONES NUMERO ADIVINADO ERES GENIAL");
+     }
+     else
+     {
+        ImprimirParametros("NUMERO INCORRECTO SIGUE INTENTANDO, EL NUMERO CORRECTO ES: "+ numeroprincipal);
+     }
+
+
+
+
+</script>
